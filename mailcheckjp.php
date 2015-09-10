@@ -1,4 +1,8 @@
-<?php require 'class.phpmailer.php';
+<?php 
+/*
+CREATED BY : Jishad P (jishadp369@gmail.com)
+*/
+require 'class.phpmailer.php';
 
 $mail = new PHPMailer();
 
@@ -6,17 +10,17 @@ $mail->IsSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mandrillapp.com';                 // Specify main and backup server
 $mail->Port = 587;                                    // Set the SMTP port
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'netstager@gmail.com';                // SMTP username
-$mail->Password = 'Yx3u8CxAdOT5ij_JgH4BFg';                  // SMTP password
+$mail->Username = 'MANDRILL_USERNAME_HERE';                // SMTP username
+$mail->Password = 'MANDRILL_PASSWORD';                  // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
-$mail->From = 'info@genderpark.gov.in';
-$mail->FromName = 'Gender Park';//
+$mail->From = 'EXAMPLE_FROM_NAME';
+$mail->FromName = 'EXAMPLE_FROM_NAME';//
 $mail->AddAddress($to);  // Add a recipient
 
-$mail->AddAddress('jishad@netstager.com', 'Josh Adams');  // Add a recipient
-$mail->AddAddress('nimisha@netstager.com', 'Josh Adams'); 
-$mail->AddAddress('prajeesh@netstager.com', 'Josh Adams'); // Add a recipient
+$mail->AddAddress('test@gmail.com', 'GMAIL USER');  // Add a recipient
+$mail->AddAddress('test2@yahoo.com', 'YAHOO USER'); 
+$mail->AddAddress('test3@outlook.com', 'OUTLOOK USER'); // Add a recipient
 
 
 $mail->IsHTML(true);                                  // Set email format to HTML
