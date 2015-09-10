@@ -14,7 +14,7 @@ $mail->Username = 'MANDRILL_USERNAME_HERE';                // SMTP username
 $mail->Password = 'MANDRILL_PASSWORD';                  // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
-$mail->From = 'EXAMPLE_FROM_NAME';
+$mail->From = 'EXAMPLE_FROM_EMAIL';
 $mail->FromName = 'EXAMPLE_FROM_NAME';//
 $mail->AddAddress($to);  // Add a recipient
 
